@@ -1,0 +1,1 @@
+def find_lines_len_more_6()
