@@ -1,29 +1,17 @@
 n, m = map(int, input().split())
-matr = []
-for i in range(n):
-    matr.append(list(map(int, input().split())))
+matr = [list(map(int, input().split())) for _ in range(n)]
 
-maxim, x,  = 0, 0
-winner_summa = 0
+winner_index = 0
+winner_sum = 0
 winner_max = 0
+
 for i in range(n):
-    summa = 0
-    athlete_maximum = 0
+    athlete_sum = sum(matr[i])
+    athlete_max = max(matr[i])
 
-    for j in range(m):
-        summa += matr[i][j]
-        # находим максимум по каждому
-        if athlete_maximum < matr[i][j]:
-            athlete_maximum = matr[i][j]
-            #print(f'атлет {i}, попытка {j}, максимум - {athlete_maximum}')
-    if winner_max < athlete_maximum:
-        winner_summa = summa
-        winner_max = athlete_maximum
-        x = i
-    elif winner_max == athlete_maximum:
-        if winner_summa < summa:
-            winner_summa = summa
-            x = i
-    #print(f'атлет {i} - максимальное значение {athlete_maximum}, всего набрал {summa}, максимум победителя {winner_max}, сумма победителя {winner_summa}')
+    if athlete_max > winner_max or (athlete_max == winner_max and athlete_sum > winner_sum):
+        winner_index = i
+        winner_sum = athlete_sum
+        winner_max = athlete_max
 
-print(x)
+print(winner_index)
