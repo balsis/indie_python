@@ -1,4 +1,4 @@
 a = list(map(int, input().split()))
 b = list(map(int, input().split()))
-c = set(a).intersection(set(b))
+c = set(a).difference(set(b))
 print(*sorted(list(c)))
