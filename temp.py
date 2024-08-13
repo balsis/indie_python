@@ -1,2 +1,4 @@
-print('2024-05-19'.islower())
-print('2024-05-19'.isupper())
+
+strr = "Арктогея"
+b = strr.upper()[-2:]
+print(b)

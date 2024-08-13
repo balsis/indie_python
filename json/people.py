@@ -65,5 +65,6 @@ people = ('[{"name": "Haley Whitney", "country": "British Indian Ocean Territory
           '"Suriname", "age": 55}, {"name": "Peggy Bryant", "country": "Korea", "age": 36}, {"name": "Erik '
           'Mclaughlin", "country": "Austria", "age": 24}]')
 dct = json.loads(people)
-for i in dct:
-	print(i)
+lst = sorted(dct, key=lambda x: (x["age"], x["name"]))
+for i in lst:
+    print(f'{i["name"]}, {i["country"]}, {i["age"]}')
