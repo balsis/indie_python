@@ -1,0 +1,1 @@
+print(any(list(map(lambda x: x.endswith("ought"), input().lower().split()))))
