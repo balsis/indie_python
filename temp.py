@@ -1,4 +1,2 @@
-
-strr = "Арктогея"
-b = strr.upper()[-2:]
-print(b)
+dct = ['2', '3']
+print(sum(map(int, dct)))
