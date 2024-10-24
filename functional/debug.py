@@ -1,7 +1,10 @@
-def my_function():
-    for i in range(1, 5):
-        print(i)
-        return i
+# объявление функции
+def draw_triangle():
+    for i in range(1, 11):
+        print("*" * i)
 
 
-print(my_function())
+# основная программа
+draw_triangle()  # вызов функции
+
+
