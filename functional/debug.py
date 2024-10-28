@@ -1,11 +1,8 @@
-x = 40
+def do_something(numbers):
+    result = 1
+    for i in numbers:
+        result *= i    
+    return result
 
-def my_func():
-    global x
-    print(x)
-    x *= 2
 
-
-print(x)
-my_func()
-print(x)
+print(do_something([2, 2, 2, 2]))
