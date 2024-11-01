@@ -1,11 +1,8 @@
-def words_length(temp: list) -> list:
-    for i in temp[:]:
-        temp.append(len(i))
-        temp.remove(i)
-    return temp
+def words_length(words):
+    for i in range(len(words)):
+        words[i] = len(words[i])
 
 words = ['Hello', 'world!']
-# words_length(words)
-# print(words)
-print(words_length(words))
+words_length(words)
+print(words)
 
