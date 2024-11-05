@@ -1,5 +1,4 @@
-def print_values(*values):
-    print(values, sep=',')
+my_string = "Это моя строка"
+my_list = [my_string]
 
-
-print_values(1, 2, 3, 4)
+print(my_list)
