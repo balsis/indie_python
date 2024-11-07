@@ -1,4 +1,6 @@
-my_string = "Это моя строка"
-my_list = [my_string]
+def get_total(price: float, qty: int = 1) -> None:
+    total: float = price * qty
+    print(f'Cost ${total:.2f}')
 
-print(my_list)
+
+print(get_total.__annotations__)
