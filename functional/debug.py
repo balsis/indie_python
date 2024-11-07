@@ -1,6 +1,4 @@
-def get_total(price: float, qty: int = 1) -> None:
-    total: float = price * qty
-    print(f'Cost ${total:.2f}')
+age = 21
 
 
-print(get_total.__annotations__)
+print(globals())
