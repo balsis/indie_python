@@ -11,3 +11,5 @@ new_list = sorted(temp_list, key=lambda x: x[0].lower(), reverse=True)
 print(new_list)
 # Теперь все элементы расположены по убыванию алфавитного порядка и возрастанию числового порядка вторых элементов.
 
+dc = {'makron78', 'realdonaldtrump', 'joebiden'}
+print(len(dc))
