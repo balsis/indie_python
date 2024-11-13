@@ -13,3 +13,6 @@ print(new_list)
 
 dc = {'makron78', 'realdonaldtrump', 'joebiden'}
 print(len(dc))
+
+
+print(type(dict))
