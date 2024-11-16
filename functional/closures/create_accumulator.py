@@ -5,8 +5,10 @@ def create_accumulator():
         nonlocal summa
         summa += x
         return summa
-
     return inner
+
+
+
 
 
 summator_1 = create_accumulator()
