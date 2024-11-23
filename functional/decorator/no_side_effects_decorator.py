@@ -1,8 +1,10 @@
+from functools import wraps
+
+
 def no_side_effects_decorator(func):
-    from functools import wraps
-    @wraps
+    @wraps(func)
     def wrapper(*args, **kwargs):
-        pass
+        return func(args[0].copy(),*args[1:],**kwargs)
 
     return wrapper
 
