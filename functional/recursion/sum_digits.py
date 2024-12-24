@@ -1,12 +1,14 @@
 def sum_digits(digit):
-    # print(digit)
-    if digit % 10 == digit:
+    if digit // 10 == 0:
         return digit
     else:
-        digit %= 10
-        return sum_digits(digit)
+        return digit % 10 + sum_digits(digit // 10)
+
 
 #
-# print(sum_digits(15))
-a =  15
-print(a // 10 + a % 10)
+print(sum_digits(15))
+# -------------------
+
+# a = 15
+# a // 10 - остаток
+# a % 10 - последнее число
