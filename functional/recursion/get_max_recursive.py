@@ -9,10 +9,10 @@ def get_max_recursive(lst):
                 maximum = wrap_maximum
     return maximum
 
+
 # print(get_max_recursive([1, 2, 3, 4, 5]))
 # print(get_max_recursive([[1, 2, 3], [4, 5], [6, 7, 8]]))
 # print(get_max_recursive([1, 2, 3, 4, [[5]], [5]]))
 print(get_max_recursive([1, 2, 3, 4, 5,
-                        [6, 7, 8,
-                        [[[9]], 1, [2, [3], 4], 5, 6]]]))
-
+                         [6, 7, 8,
+                          [[[9]], 1, [2, [3], 4], 5, 6]]]))
