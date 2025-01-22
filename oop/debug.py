@@ -1,9 +1,2 @@
-def say_hello(name):
-    print(f"Привет, {name}!")
-
-
-def choose_profession(profession):
-    print(f'Я хочу стать {profession}ом')
-
-
-    
+text = 'каска'
+print(text.find('а', 2, 4))
