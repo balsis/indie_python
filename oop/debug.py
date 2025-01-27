@@ -1,2 +1,4 @@
-text = 'каска'
-print(text.find('а', 2, 4))
+import math
+
+
+print(math.ceil(-8.99))
