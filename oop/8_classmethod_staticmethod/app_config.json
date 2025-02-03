@@ -1,0 +1,12 @@
+{
+  "database": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "database_name": "postgres_db",
+    "user": "owner",
+    "password": "ya_vorona_ya_vorona"
+  },
+  "api_key": "hUFHu834837248jhoiHF89",
+  "log_level": "debug",
+  "max_connections": 10
+}
