@@ -1,3 +1,3 @@
-days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-days[2: 6] = []
-print(days)
+value = 'as1SNdf'
+if 11 >= len(value) >= 5:
+    print("True")
