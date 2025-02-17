@@ -15,5 +15,6 @@ class Vector:
             return f'Вектор({", ".join(map(str, sorted(self.numbers)))})'
         return 'Пустой вектор'
 
+
 v5 = Vector(1, True, False, 5, 2, True, 4)
 print(str(v5))
