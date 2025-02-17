@@ -1,19 +1,28 @@
-def test_readable_function():
-    open_browser(browser_name="Chrome")
-    go_to_companyname_homepage(page_url="https://companyname.com")
-    find_registration_button_on_login_page(page_url="https://companyname.com/login", button_text="Register")
+class Duck:
+    def swim(self):
+        print("I'm a duck, and I can swim.")
+
+    def quack(self):
+        print("I'm a duck, and I can quack.")
 
 
-def open_browser(browser_name):
-    actual_result = f"Open Browser [{browser_name}]"
-    assert actual_result == "Open Browser [Chrome]"
+class RoboticBird:
+    def swim(self):
+        print("I'm a robotic bird, and I can swim.")
+
+    def quack(self):
+        print("I'm a robotic bird, and I can quack.")
 
 
-def go_to_companyname_homepage(page_url):
-    actual_result = f"Go To Companyname Homepage [{page_url}]"
-    assert actual_result == "Go To Companyname Homepage [https://companyname.com]"
+class Fish:
+    def swim(self):
+        print("I'm a fish, and I can swim")
 
 
-def find_registration_button_on_login_page(page_url, button_text):
-    actual_result = f"Find Registration Button On Login Page [{page_url}, {button_text}]"
-    assert actual_result == "Find Registration Button On Login Page [https://companyname.com/login, Register]"
+def make_swim(animal):
+    animal.swim()
+
+
+animals = [Duck(), Fish(), RoboticBird()]
+for animal in animals:
+    make_swim(animal)
