@@ -12,7 +12,7 @@ class Date:
     def usa_date(self):
         return f'{self.month:02}-{self.day:02}-{self.year:04}'
 
-# Ниже код для проверки методов класса Date
+# Ниже код для проверки методов класса DateUSA
 
 d1 = Date(5, 10, 2001)
 assert isinstance(d1, Date)

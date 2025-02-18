@@ -1,28 +1,14 @@
-class Duck:
-    def swim(self):
-        print("I'm a duck, and I can swim.")
+class NamedDuck:
+    def __init__(self, name):
+        self.name = name
 
-    def quack(self):
-        print("I'm a duck, and I can quack.")
+    def __str__(self):
+        return self.name
 
-
-class RoboticBird:
-    def swim(self):
-        print("I'm a robotic bird, and I can swim.")
-
-    def quack(self):
-        print("I'm a robotic bird, and I can quack.")
+    def __len__(self):
+        return len(str(self))
 
 
-class Fish:
-    def swim(self):
-        print("I'm a fish, and I can swim")
-
-
-def make_swim(animal):
-    animal.swim()
-
-
-animals = [Duck(), Fish(), RoboticBird()]
-for animal in animals:
-    make_swim(animal)
+ducks = [NamedDuck('Amazing'), 'OK', NamedDuck('Lucky'), 'SuperGood', NamedDuck('Zina')]
+ducks.sort(key=len, reverse=True)
+print([str(x) for x in ducks])
