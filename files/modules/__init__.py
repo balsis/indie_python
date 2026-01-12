@@ -1,3 +1,3 @@
-from os import environ
-
-print(environ.get("HOME"))
+import sys
+import pprint
+pprint.pprint(sys.modules)

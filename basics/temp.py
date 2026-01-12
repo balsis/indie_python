@@ -1,2 +1,5 @@
-dct = ['2', '3']
-print(sum(map(int, dct)))
+price = 2000
+discount = 10
+
+price -= price * (discount / 100)
+print(price)
