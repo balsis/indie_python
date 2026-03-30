@@ -1,0 +1,5 @@
+Code is like humor. When you have to explain it, it’s bad.
+In theory, theory and practice are the same. In practice — not really.
+Python is like coffee: it keeps you awake, but sometimes too much.
+Always code as if the guy who ends up maintaining your code will be a violent psychopath.
+First, solve the problem. Then, write the code.
