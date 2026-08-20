@@ -1,0 +1,4 @@
+education,default,balance,housing,loan,contact,day,month,duration,campaign,pdays,previous,poutcome,deposit
+secondary,no,2343,yes,no,unknown,5,may,1042,1,-1,0,unknown,yes
+secondary,no,45,no,no,unknown,5,may,1467,1,-1,0,unknown,yes
+secondary,no,1270,yes,no,unknown,5,may,1389,1,-1,0,unknown,yes
